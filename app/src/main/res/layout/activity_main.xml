@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Mobile Brands"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_samsung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Samsung"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_oneplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OnePlus"
+        android:layout_marginTop="20dp" />
+<!--Radio button-->
+
+    <TextView
+        android:id="@+id/radio_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Favorite Laptop Brand"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <RadioButton
+            android:id="@+id/radio_samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dell" />
+
+        <RadioButton
+            android:id="@+id/radio_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP" />
+
+        <RadioButton
+            android:id="@+id/radio_oneplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lenovo" />
+    </RadioGroup>
+
+    <!-- for rating bar -->
+
+    <TextView
+        android:id="@+id/ratingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate this product:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.5"
+        android:backgroundTint="@color/black"
+        android:isIndicator="false" />
+
+    <TextView
+        android:id="@+id/ratingResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating: "
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="10dp"
+        android:text="Next"/>
+
+
+</LinearLayout>
